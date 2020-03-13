@@ -8,7 +8,7 @@ The Data was retrieved from Yahoo! and contains the stock prices of all S&P 500 
 - FB Prophet
 - Long Short Term Memory (LSTM)
 ## Results
-##### ARIMA 
+### ARIMA 
 ARIMA did not work especially well for forecasting stock price in this case. There were two main reasons for this
 1. ARIMA is a linear model. One can only be so accurate prediciting a trend with oscillations and noise like a stock price with a straight line.
 2. Shocks, either positive or negative, are very hard to account for. Microsoft had an incredible 2019, mostly attributed to the company's invesment into cloud computing. The stock roce 55% which was unprecedented in the data the model was trained on. 
@@ -22,13 +22,13 @@ RMSE: 15.44
 ![Screenshot](ARIMA2year.png)
 
 
-#### FB Prophet
+### FB Prophet
 FB Prophet is a model based on a generalized additive model (GAM).<br />
 The model was fairly effective at forecasting forward and was extremely fast making it's predictions. For these reasons I chose to use this model for the front end of the project. <br />
 RMSE: 8.36
 ![Screenshot](fbprophet.png)
 
-#### LSTM
+### LSTM
 LSTM is an evolution of a Recurrent Neural Network. <br />
 LSTM uses a feedback loop and gates to “remember”. It predicts one step forward then shifts its window and updates its memory.<br />
 LSTM was the most effective model at forecasting stock prices but takes about an hour to fit. <br />
