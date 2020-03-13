@@ -14,12 +14,12 @@ ARIMA did not work especially well for forecasting stock price in this case. The
 2. Shocks, either positive or negative, are very hard to account for. Microsoft had an incredible 2019, mostly attributed to the company's invesment into cloud computing. The stock roce 55% which was unprecedented in the data the model was trained on. 
 <!-- end of the list -->
 RMSE: 22.50
-![Screenshot](ARIMA1year.png)
+![Screenshot](Arima1year.png)
 
 
 Interestingy enough the model performed better on a two year prediction than it did on a one year prediction. This is due to the accuracy for 2018. At the end of the year the prediction was only about a dollar and 30 cents off. <br />
 RMSE: 15.44
-![Screenshot](ARIMA2year.png)
+![Screenshot](Arima2year.png)
 
 
 ### FB Prophet
